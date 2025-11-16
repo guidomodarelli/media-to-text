@@ -29,7 +29,7 @@ class AITools():
         log_info(f"Transcribing {file_path}...")
         with open(file_path, "rb") as audio_file:
             transcription = self.client.audio.transcriptions.create(
-                model="gpt-4o-mini-transcribe",
+                model="gpt-4o-transcribe-diarize",
                 file=audio_file
             )
         return transcription.text
