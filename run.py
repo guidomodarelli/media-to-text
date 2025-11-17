@@ -74,7 +74,7 @@ MAX_PROCESSING_DURATION: float | None = None
 try:
     MAX_PROCESSING_DURATION = float(os.environ.get("MAX_PROCESSING_DURATION") or "")
 except ValueError:
-    log_error(f"Invalid MAX_PROCESSING_DURATION: {MAX_PROCESSING_DURATION}. Using entire file.")
+    log_warning(f"Invalid MAX_PROCESSING_DURATION: {MAX_PROCESSING_DURATION}. Using entire file.")
     MAX_PROCESSING_DURATION = None
 
 def get_audio_duration(file_path):
