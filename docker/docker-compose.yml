@@ -1,0 +1,11 @@
+services:
+  m2text:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: m2text
+    volumes:
+      - ..:/app:delegated
+    working_dir: /app
+    tty: true
+    stdin_open: true
