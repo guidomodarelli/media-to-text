@@ -1,9 +1,9 @@
 services:
-  m2text:
+  m2txt:
     build:
       context: ..
       dockerfile: docker/Dockerfile
-    container_name: m2text
+    container_name: m2txt
     volumes:
       - ..:/app:delegated
     working_dir: /app

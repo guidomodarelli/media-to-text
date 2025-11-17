@@ -1,4 +1,4 @@
-# Speech-to-Text Transcription Tool
+# m2txt Transcription Tool
 
 A Python utility that converts speech from audio/video files or YouTube URLs to text using OpenAI's transcription API.
 
